@@ -63,7 +63,7 @@ const CountryDetails = () => {
 
     try {
       const response = favorite
-        ? await fetch('http://localhost:5000/api/api/favorites/remove', {
+        ? await fetch('http://localhost:5000/api/favorites/remove', {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const CountryDetails = () => {
             },
             body: JSON.stringify({ countryCode }),
           })
-        : await fetch('http://localhost:5000/api/api/favorites/add', {
+        : await fetch('http://localhost:5000/api/favorites/add', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
