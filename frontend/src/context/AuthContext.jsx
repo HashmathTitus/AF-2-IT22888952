@@ -21,7 +21,7 @@
 //   // Login function
 //   const login = async (username, password) => {
 //     try {
-//       const response = await axios.post('`${import.meta.env.http://localhost:5000}`/auth/login', {
+//       const response = await axios.post('`${import.meta.env.https://af-2-it-22888952.vercel.app}`/auth/login', {
 //         username,
 //         password,
 //       });
@@ -43,7 +43,7 @@
 //   // Register function
 //   const register = async (username, password) => {
 //     try {
-//       const response = await axios.post('`${import.meta.env.http://localhost:5000}`/auth/register', {
+//       const response = await axios.post('`${import.meta.env.https://af-2-it-22888952.vercel.app}`/auth/register', {
 //         username,
 //         password,
 //       });

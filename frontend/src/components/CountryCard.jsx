@@ -14,7 +14,7 @@ const CountryCard = ({ country, onClick, isFavorite = false, onToggleFavorite })
     const loadData = async () => {
       try {
         if (userToken) {
-          const res = await fetch('http://localhost:5000/api/favorites', {
+          const res = await fetch('https://af-2-it-22888952.vercel.app/api/favorites', {
             headers: {
               Authorization: `Bearer ${userToken}`,
             },
@@ -54,7 +54,7 @@ const CountryCard = ({ country, onClick, isFavorite = false, onToggleFavorite })
 
     try {
       const response = favorite
-        ? await fetch('http://localhost:5000/api/favorites/remove', {
+        ? await fetch('https://af-2-it-22888952.vercel.app/api/favorites/remove', {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ const CountryCard = ({ country, onClick, isFavorite = false, onToggleFavorite })
             },
             body: JSON.stringify({ countryCode }),
           })
-        : await fetch('http://localhost:5000/api/favorites/add', {
+        : await fetch('https://af-2-it-22888952.vercel.app/api/favorites/add', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
