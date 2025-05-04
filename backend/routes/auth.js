@@ -10,6 +10,10 @@ const generateToken = (userId) => {
   });
 };
 
+app.get('/working', (req, res) => {
+  res.status(200).json({ message: 'Server is running successfully 🚀' });
+});
+
 router.post('/register', async (req, res) => {
   const { username, password } = req.body;
 
