@@ -50,7 +50,7 @@ const Home = () => {
     const loadFavorites = async () => {
       if (!userToken) return;
       try {
-        const res = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}/api/favorites`, {
+        const res = await fetch('http://localhost:5000/api/favorites', {
           headers: { Authorization: `Bearer ${userToken}` },
         });
         const data = await res.json();
