@@ -21,7 +21,7 @@ const CountryDetails = () => {
         setCountry(data);
 
         if (userToken) {
-          const res = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}/favorites`, {
+          const res = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}/api/favorites`, {
             headers: {
               Authorization: `Bearer ${userToken}`,
             },
@@ -63,7 +63,7 @@ const CountryDetails = () => {
 
     try {
       const response = favorite
-        ? await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}/favorites/remove`, {
+        ? await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}/api/favorites/remove`, {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const CountryDetails = () => {
             },
             body: JSON.stringify({ countryCode }),
           })
-        : await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}/favorites/add`, {
+        : await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}/api/favorites/add`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
