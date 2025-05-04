@@ -1,0 +1,103 @@
+/* CountryDetails.css */
+
+.country-details-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.country-details-card {
+  background-color: #b0b5bb;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.flag-section {
+  flex: 1 1 300px;
+  position: relative;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.flag-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.favorites-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #5900ff;
+  cursor: pointer;
+  transition: transform 0.2s;
+  outline: none;
+  box-shadow: none;
+}
+
+.favorites-button:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.favorites-button:hover {
+  transform: scale(1.1);
+}
+
+button.favorites-button {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+button.favorites-button:focus,
+button.favorites-button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.info-section {
+  flex: 2 1 400px;
+  padding: 2rem;
+}
+
+.header .country-name {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.country-info p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.country-info strong {
+  color: #000000;
+}
+
+/* Loading and error states */
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  color: #555;
+}

@@ -1,0 +1,46 @@
+/* SearchBar.css */
+
+.searchbar-container {
+    display: flex;
+    justify-content: left;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+  }
+  
+  .searchbar-wrapper {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .searchbar-input {
+    width: 100%;
+    padding: 0.75rem 4rem;
+    border-radius: 2rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .searchbar-input:focus {
+    border-color: #1c8d05;
+    box-shadow: 0 0 0 3px rgba(255, 127, 0, 0.2);
+    outline: none;
+  }
+
+  .searchbar-icon {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1.2rem;
+    pointer-events: none;
+  }
+
+  .searchbar-icon:hover {
+    color: #1c8d05;
+  }
+  

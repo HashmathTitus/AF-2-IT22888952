@@ -1,0 +1,89 @@
+/* Home.css */
+
+.home-container {
+  padding: 2rem;
+  background-color: rgb(230, 252, 226);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-filter-wrapper2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.sff {
+  flex: 1 1 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.globe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotating-globe {
+  width: 80px;
+  height: 80px;
+  animation: spin 20s linear infinite;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.loading-text,
+.no-results-text {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #666;
+  margin-top: 4rem;
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.page-button {
+  background-color: #fff;
+  border: 2px solid #ff7f00;
+  color: #ff7f00;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.page-button:hover:not(:disabled),
+.page-button.active {
+  background-color: #ff7f00;
+  color: #fff;
+}
+
+.page-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,115 @@
+/* NavBar.css */
+
+.navbar {
+  background-color: #cbfa96;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(255, 51, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo .home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1c8d05;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #1c8d05;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #28a745; 
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(40, 167, 69, 0.6);
+}
+
+.navbar-link:hover {
+  background-color: rgba(255, 127, 0, 0.1);
+  color:  #1c8d05;
+}
+
+.navbar-btn {
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.login-btn {
+  background-color:  #1c8d05;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color:  #889686;
+}
+
+.logout-btn {
+  background-color: #46b92f;
+  color: #fffdfd;
+}
+
+.logout-btn:hover {
+  background-color: #ccc;
+}
+
+.sff {
+  flex: 1 1 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.globe-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding: 0.5rem;
+  width: 100%;  
+}
+
+.rotating-globe {
+  animation: spin 20s linear infinite;
+  border-radius: 10%;
+  height: 15%; 
+  width: 15%;  
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  margin-right: 1.5rem;
+  object-fit: cover;
+}
